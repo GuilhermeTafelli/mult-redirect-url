@@ -30,7 +30,7 @@ app.get("/", async (req, res) => {
 
     ]
 
-    res.redirect(urlList[countOld.count%4])
+    res.redirect(urlList[countOld.count%5])
 });
 
 
