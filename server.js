@@ -22,11 +22,11 @@ app.get("/", async (req, res) => {
     await Counter.findByIdAndUpdate(countOld.id, {count: countOld.count+1});
 
     const urlList = [
-        "https://api.whatsapp.com/send?phone=5511977890913",
-        "https://api.whatsapp.com/send?phone=5511964201683",
-        "https://api.whatsapp.com/send?phone=5511964321041",
-        "https://api.whatsapp.com/send?phone=5511959652716",
-        "https://api.whatsapp.com/send?phone=5511949407181"
+        "https://api.whatsapp.com/send?phone=5511977890913&text=ol%C3%A1!%20vim%20do%20an%C3%BAncio%20gostaria%20de%20receber%20o%20cat%C3%A1logo%20com%20as%20pe%C3%A7as",
+        "https://api.whatsapp.com/send?phone=5511964201683&text=ol%C3%A1!%20vim%20do%20an%C3%BAncio%20gostaria%20de%20receber%20o%20cat%C3%A1logo%20com%20as%20pe%C3%A7as",
+        "https://api.whatsapp.com/send?phone=5511964321041&text=ol%C3%A1!%20vim%20do%20an%C3%BAncio%20gostaria%20de%20receber%20o%20cat%C3%A1logo%20com%20as%20pe%C3%A7as",
+        "https://api.whatsapp.com/send?phone=5511959652716&text=ol%C3%A1!%20vim%20do%20an%C3%BAncio%20gostaria%20de%20receber%20o%20cat%C3%A1logo%20com%20as%20pe%C3%A7as",
+        "https://api.whatsapp.com/send?phone=5511949407181&text=ol%C3%A1!%20vim%20do%20an%C3%BAncio%20gostaria%20de%20receber%20o%20cat%C3%A1logo%20com%20as%20pe%C3%A7as"
 
     ]
 
