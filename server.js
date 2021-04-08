@@ -15,7 +15,7 @@ requireDir("./src/models");
 
 const Counter = mongoose.model('Counter')
 
-app.get("/", async (req, res) => {
+app.get("/keila-neves", async (req, res) => {
 
     const countOld = await Counter.findOne();
 
