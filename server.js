@@ -27,6 +27,8 @@ app.get("/keila-neves", async (req, res) => {
         "https://api.whatsapp.com/send?phone=5541999494223",
         "https://api.whatsapp.com/send?phone=5547999515142",
         "https://api.whatsapp.com/send?phone=5511989548529",
+        "https://api.whatsapp.com/send?phone=5547999202315",
+        "https://api.whatsapp.com/send?phone=5511989548529",
         "https://api.whatsapp.com/send?phone=5511992338844"
     ]
 
