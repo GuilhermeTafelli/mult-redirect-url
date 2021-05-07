@@ -25,27 +25,24 @@ app.get("/keila-neves", async (req, res) => {
         "https://api.whatsapp.com/send?phone=5511992313878",
         "https://api.whatsapp.com/send?phone=5511992338844",
         "https://api.whatsapp.com/send?phone=556296443908",
-        "https://api.whatsapp.com/send?phone=5521965848290",
-        "https://api.whatsapp.com/send?phone=5511989548529"
     ]
 
-    res.redirect(urlList[countOld.count%5])
+    res.redirect(urlList[countOld.count%3])
 });
 
 
-app.get("/atomic-brand", async (req, res) => {
+app.get("/keila-neves/vendas", async (req, res) => {
 
     const countOld = await Counter.findOne();
 
     await Counter.findByIdAndUpdate(countOld.id, {count: countOld.count+1});
 
     const urlList = [
-        "https://api.whatsapp.com/send?phone=5547999515142",
-        "https://api.whatsapp.com/send?phone=5541999494223",
-        "https://api.whatsapp.com/send?phone=5547918926789"
+        "https://api.whatsapp.com/send?phone=5521965848290",
+        "https://api.whatsapp.com/send?phone=5511989548529",
     ]
 
-    res.redirect(urlList[countOld.count%3])
+    res.redirect(urlList[countOld.count%2])
 });
 
 app.listen(process.env.PORT || 8080);
