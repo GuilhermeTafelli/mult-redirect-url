@@ -40,9 +40,12 @@ app.get("/keila-neves/vendas", async (req, res) => {
     const urlList = [
         "https://api.whatsapp.com/send?phone=5521965848290",
         "https://api.whatsapp.com/send?phone=5511989548529",
+        "https://api.whatsapp.com/send?phone=5511934701664",
+       "https://api.whatsapp.com/send?phone=554799515142",
+        "https://api.whatsapp.com/send?phone=554199494223"
     ]
 
-    res.redirect(urlList[countOld.count%2])
+    res.redirect(urlList[countOld.count%5)
 });
 
 app.listen(process.env.PORT || 8080);
