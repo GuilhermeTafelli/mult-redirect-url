@@ -45,7 +45,7 @@ app.get("/keila-neves/vendas", async (req, res) => {
         "https://api.whatsapp.com/send?phone=554199494223"
     ]
 
-    res.redirect(urlList[countOld.count%5))
+    res.redirect(urlList[countOld.count%5])
 });
 
 app.listen(process.env.PORT || 8080);
